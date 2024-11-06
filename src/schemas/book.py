@@ -9,4 +9,5 @@ class BookBaseSchema(BaseModel):
 
 
 class BookCreateSchema(BookBaseSchema):
+    id: int
     model_config = ConfigDict(from_attributes=True)

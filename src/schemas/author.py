@@ -7,4 +7,5 @@ class AuthorBaseSchema(BaseModel):
 
 
 class AuthorCreateSchema(AuthorBaseSchema):
+    id: int
     model_config = ConfigDict(from_attributes=True)

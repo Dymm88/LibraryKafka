@@ -6,4 +6,5 @@ class TagBaseSchema(BaseModel):
 
 
 class TagCreateSchema(TagBaseSchema):
+    id: int
     model_config = ConfigDict(from_attributes=True)
